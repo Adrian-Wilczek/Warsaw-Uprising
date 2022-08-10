@@ -2,7 +2,6 @@
     grid-column: 1 / -1;
     grid-row: 3;
     text-align: center;
-    flex-direction: column;
     color: $secondary-color;
     font-size: 4rem;
     margin-bottom: 5vh;
@@ -13,7 +12,7 @@
     }
 }
 .navigation{
-    margin-top: 5rem;
+    margin-top: 5vh;
     grid-column: 3 / 4;
     grid-row: 1;
 
