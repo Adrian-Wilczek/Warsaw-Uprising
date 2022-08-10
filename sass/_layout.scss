@@ -1,7 +1,15 @@
 .header{
-    background-image: url(../images/header-image.jpg);
+    
+    background-image:  url(../images/header-image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content ;
+    grid-template-columns: max-content 2fr max-content 1fr;
+    &__image{
+        width: 20rem;
+        grid-area: 1 / 1
+    }
 }

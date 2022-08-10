@@ -1,0 +1,38 @@
+.main-header{
+    grid-column: 1 / -1;
+    grid-row: 3;
+    text-align: center;
+    flex-direction: column;
+    color: $secondary-color;
+    font-size: 4rem;
+    margin-bottom: 5vh;
+    
+    &__sentense{
+        color: $primary-color;
+        font-size: 3.5rem;
+    }
+}
+.navigation{
+    margin-top: 5rem;
+    grid-column: 3 / 4;
+    grid-row: 1;
+
+    &__content{
+        display: flex;
+        font-size:3rem;
+        list-style: none;
+        color: $secondary-color;
+    }
+    &__element{
+        margin-right: 4rem;
+        padding-right: 3rem;
+        border-right: solid 2px $primary-color;
+        transition: all 0.6s;
+        &:hover{
+            color: $primary-color;
+        }
+        &--last{
+            border-right: none;
+        }
+    }
+}
