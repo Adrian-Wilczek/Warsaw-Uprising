@@ -11,7 +11,7 @@
 
 .navigation{
     display: flex;
-    font-size:3rem;
+    font-size: 3rem;
     list-style: none;
     color: $secondary-color;
     &__element{
@@ -61,7 +61,6 @@
     
 }
 .articles-container{
-    margin-top: 9vh;
     display: flex;
     flex-direction: column;
 }
@@ -84,6 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     &__paragraph{
         font-size: 2.7rem;
         line-height: 3rem;
@@ -92,15 +92,17 @@
         color: $secondary-color;
         text-align: center;
         transform:  rotate(270deg);
+        
         &--alt-rotate{
             transform: rotate(90deg);
         }
+        
         
         &::before{
             margin-right: 5rem;
             content: "";
             display: block;
-            width: 40vh;
+            width: 80vh;
             height: .3rem;
             background-color: $secondary-color;
             
@@ -110,9 +112,10 @@
             margin-left: 5rem;
             content: "";
             display: block;
-            width: 30vh;
+            width: 80vh;
             height: .3rem;
             background-color: $secondary-color;
+            
            
             
         }
@@ -122,9 +125,7 @@
 }
 .about-aside{
     
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 5vh;
+    align-self: center;
     
     &__content{
         background-color: $primary-color;
@@ -132,8 +133,8 @@
         width: 5rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         &--decision{
             height: 30vh;
             text-align: center;
@@ -195,7 +196,6 @@
 }
 
 .day-container{
-    margin-top: 14vh;
     padding-bottom: 5rem;
     width: 100%;
     display: flex;
@@ -205,7 +205,7 @@
     
     &__heading{
         color: $primary-color;
-        font-size: 4rem;
+        font-size: 4.5rem;
         order: 1;
         &--col2{
             order: 2;
@@ -215,7 +215,7 @@
         display: block;
         width: 50%;
         color: $main-font-color;
-        font-size: 2rem;
+        font-size: 2.5rem;
         order: 1;
     }
 }
@@ -259,6 +259,10 @@
             height: 100%;
             backface-visibility: hidden;
             background-color: $primary-color;
+            background-image: url(../images/uprising-symbol.png);
+            background-position: bottom;
+            background-size: 90%;
+            background-repeat: no-repeat;
             transform: rotateY(180deg);
             color: white;
             font-size: 2rem;

@@ -67,7 +67,6 @@ a, a:link, a:visited {
     padding: 0 3rem; }
 
 .articles-container {
-  margin-top: 9vh;
   display: flex;
   flex-direction: column; }
 
@@ -85,7 +84,8 @@ a, a:link, a:visited {
   background-color: #292929;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .time-aside__paragraph {
     font-size: 2.7rem;
     line-height: 3rem;
@@ -100,29 +100,27 @@ a, a:link, a:visited {
       margin-right: 5rem;
       content: "";
       display: block;
-      width: 40vh;
+      width: 80vh;
       height: .3rem;
       background-color: #f7f7f7; }
     .time-aside__paragraph::after {
       margin-left: 5rem;
       content: "";
       display: block;
-      width: 30vh;
+      width: 80vh;
       height: .3rem;
       background-color: #f7f7f7; }
 
 .about-aside {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 5vh; }
+  align-self: center; }
   .about-aside__content {
     background-color: #d80000;
     height: 40vh;
     width: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .about-aside__content--decision {
       height: 30vh;
       text-align: center; }
@@ -169,7 +167,6 @@ a, a:link, a:visited {
       font-size: 2rem; }
 
 .day-container {
-  margin-top: 14vh;
   padding-bottom: 5rem;
   width: 100%;
   display: flex;
@@ -177,7 +174,7 @@ a, a:link, a:visited {
   border-bottom: 2px solid #aea6a6; }
   .day-container__heading {
     color: #d80000;
-    font-size: 4rem;
+    font-size: 4.5rem;
     order: 1; }
     .day-container__heading--col2 {
       order: 2; }
@@ -185,7 +182,7 @@ a, a:link, a:visited {
     display: block;
     width: 50%;
     color: #070707;
-    font-size: 2rem;
+    font-size: 2.5rem;
     order: 1; }
 
 .card {
@@ -219,6 +216,10 @@ a, a:link, a:visited {
     height: 100%;
     backface-visibility: hidden;
     background-color: #d80000;
+    background-image: url(../images/uprising-symbol.png);
+    background-position: bottom;
+    background-size: 90%;
+    background-repeat: no-repeat;
     transform: rotateY(180deg);
     color: white;
     font-size: 2rem;
@@ -264,12 +265,13 @@ a, a:link, a:visited {
     z-index: 1;
     transform: translateX(3rem); }
   .storm-section__articles-container {
+    margin-top: 10vh;
     grid-row: 2;
     grid-column: 2; }
   .storm-section__section-header {
     grid-row: 1;
     grid-column: 1 / 5;
-    margin-top: 8vh; }
+    margin-top: 15vh; }
   .storm-section__time-aside {
     grid-row: 1 / -1;
     grid-column: 1; }
@@ -288,7 +290,7 @@ a, a:link, a:visited {
   .decision-section__section-header {
     grid-row: 1;
     grid-column: 1 / 5;
-    margin-top: 8vh; }
+    margin-top: 15vh; }
   .decision-section__time-aside {
     grid-row: 1 / -1;
     grid-column: 4; }
@@ -328,10 +330,12 @@ a, a:link, a:visited {
   grid-column: 2 / 3;
   width: 90%;
   margin-left: 5vw; }
+  .all-days-container__day-container {
+    margin-top: 14vh; }
 
 .uprising-effects-section {
   display: grid;
-  grid-template-columns: 8rem repeat(3, 1fr) min-content;
+  grid-template-columns: 8rem min-content 1fr min-content;
   grid-template-rows: min-content 1fr;
   grid-row-gap: 10rem; }
   .uprising-effects-section__section-header {
@@ -341,8 +345,6 @@ a, a:link, a:visited {
     grid-column: 1;
     grid-row: 1 / -1; }
   .uprising-effects-section__about-aside {
-    display: flex;
-    align-self: center;
     grid-column: 8;
     grid-row: 2; }
   .uprising-effects-section__article {
@@ -354,6 +356,6 @@ a, a:link, a:visited {
     grid-row: 2;
     grid-column: 4;
     margin-right: 6vw;
-    margin-bottom: 10vh; }
+    margin-bottom: 5vh; }
     .uprising-effects-section__card--second {
       grid-column: 6; }
