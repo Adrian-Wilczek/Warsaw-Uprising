@@ -155,6 +155,9 @@ a, a:link, a:visited {
     background-image: url(../images/ornament2.jpg); }
   .ornament--bgimage3 {
     background-image: url(../images/ornament3.jpg); }
+  .ornament--bgimage4 {
+    background-image: url(../images/ornament4.jpg);
+    background-position: center; }
   .ornament__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.394);
@@ -187,7 +190,7 @@ a, a:link, a:visited {
 
 .card {
   position: relative;
-  width: 30rem;
+  width: 20vw;
   height: 45rem;
   transform-style: preserve-3d;
   transition: all 0.9s ease; }
@@ -219,7 +222,7 @@ a, a:link, a:visited {
     transform: rotateY(180deg);
     color: white;
     font-size: 2rem;
-    line-height: 5rem;
+    line-height: 3rem;
     font-weight: bold;
     padding: 2rem;
     text-align: center; }
@@ -333,7 +336,7 @@ a, a:link, a:visited {
   grid-row-gap: 10rem; }
   .uprising-effects-section__section-header {
     grid-row: 1;
-    grid-column: 2 / -1; }
+    grid-column: 2 / 8; }
   .uprising-effects-section__time-aside {
     grid-column: 1;
     grid-row: 1 / -1; }

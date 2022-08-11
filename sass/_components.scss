@@ -177,6 +177,10 @@
     &--bgimage3{
         background-image: url(../images/ornament3.jpg);
     }
+    &--bgimage4{
+        background-image: url(../images/ornament4.jpg);
+        background-position: center;
+    }
     &__content{
         display: block;
         background-color: rgba(0, 0, 0, 0.394);
@@ -219,7 +223,7 @@
     
     .card{
         position: relative;
-        width: 30rem;
+        width: 20vw;
         height: 45rem;
         transform-style: preserve-3d;
         transition: all 0.9s ease;
@@ -258,7 +262,7 @@
             transform: rotateY(180deg);
             color: white;
             font-size: 2rem;
-            line-height: 5rem;
+            line-height: 3rem;
             font-weight: bold;
             padding: 2rem;
             text-align: center;
