@@ -169,10 +169,13 @@
     justify-content: center;
     &--bgimage1
     {
-        background-image: url(../images/ornament-image1.jpg);
+        background-image: url(../images/ornament1.jpg);
     }
     &--bgimage2{
         background-image: url(../images/ornament2.jpg);
+    }
+    &--bgimage3{
+        background-image: url(../images/ornament3.jpg);
     }
     &__content{
         display: block;
@@ -181,6 +184,9 @@
         font-size: 2.5rem;
         width: 80%;
         padding: 1rem;
+        &--3{
+            font-size: 2rem;
+        }
     }
 }
 
@@ -209,3 +215,53 @@
         order: 1;
     }
 }
+
+    
+    .card{
+        position: relative;
+        width: 30rem;
+        height: 45rem;
+        transform-style: preserve-3d;
+        transition: all 0.9s ease;
+        &:hover{
+            transform: translateY(-2rem) rotateY(180deg) ;
+            
+        }
+        &__front{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: $primary-color;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+           justify-content: center;
+            flex-direction: column;
+        }
+        &__image{
+            width: 20rem;
+        }
+    
+        
+        &__paragraph{
+            margin-top: 2rem;
+            color: white;
+            font-size: 4rem;
+        }
+        &__back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: $primary-color;
+            transform: rotateY(180deg);
+            color: white;
+            font-size: 2rem;
+            line-height: 5rem;
+            font-weight: bold;
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+   

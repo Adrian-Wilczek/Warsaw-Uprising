@@ -8,7 +8,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Anton', sans-serif;
@@ -149,9 +150,11 @@ a, a:link, a:visited {
   align-items: center;
   justify-content: center; }
   .ornament--bgimage1 {
-    background-image: url(../images/ornament-image1.jpg); }
+    background-image: url(../images/ornament1.jpg); }
   .ornament--bgimage2 {
     background-image: url(../images/ornament2.jpg); }
+  .ornament--bgimage3 {
+    background-image: url(../images/ornament3.jpg); }
   .ornament__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.394);
@@ -159,6 +162,8 @@ a, a:link, a:visited {
     font-size: 2.5rem;
     width: 80%;
     padding: 1rem; }
+    .ornament__content--3 {
+      font-size: 2rem; }
 
 .day-container {
   margin-top: 14vh;
@@ -180,11 +185,50 @@ a, a:link, a:visited {
     font-size: 2rem;
     order: 1; }
 
+.card {
+  position: relative;
+  width: 30rem;
+  height: 45rem;
+  transform-style: preserve-3d;
+  transition: all 0.9s ease; }
+  .card:hover {
+    transform: translateY(-2rem) rotateY(180deg); }
+  .card__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #d80000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .card__image {
+    width: 20rem; }
+  .card__paragraph {
+    margin-top: 2rem;
+    color: white;
+    font-size: 4rem; }
+  .card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #d80000;
+    transform: rotateY(180deg);
+    color: white;
+    font-size: 2rem;
+    line-height: 5rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center; }
+
 .container {
   overflow: hidden; }
 
 .header {
-  background-image: url(../images/header-image.jpg);
+  background-image: url(../images/header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -259,8 +303,7 @@ a, a:link, a:visited {
 .uprising-time-section {
   display: grid;
   grid-template-columns: 8rem 1fr min-content;
-  grid-template-rows: repeat(4, min-content);
-  padding-bottom: 10vh; }
+  grid-template-rows: repeat(4, min-content); }
   .uprising-time-section__time-aside {
     grid-row: 1 / 8;
     grid-column: 1; }
@@ -274,10 +317,40 @@ a, a:link, a:visited {
     justify-self: center;
     grid-column: 2;
     grid-row: 7;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    margin-bottom: 10vh; }
 
 .all-days-container {
   margin-top: 10vh;
   grid-column: 2 / 3;
   width: 90%;
   margin-left: 5vw; }
+
+.uprising-effects-section {
+  display: grid;
+  grid-template-columns: 8rem repeat(3, 1fr) min-content;
+  grid-template-rows: min-content 1fr;
+  grid-row-gap: 10rem; }
+  .uprising-effects-section__section-header {
+    grid-row: 1;
+    grid-column: 2 / -1; }
+  .uprising-effects-section__time-aside {
+    grid-column: 1;
+    grid-row: 1 / -1; }
+  .uprising-effects-section__about-aside {
+    display: flex;
+    align-self: center;
+    grid-column: 8;
+    grid-row: 2; }
+  .uprising-effects-section__article {
+    grid-row: 2;
+    grid-column: 2 / 4; }
+  .uprising-effects-section__button {
+    margin-top: 15vh; }
+  .uprising-effects-section__card {
+    grid-row: 2;
+    grid-column: 4;
+    margin-right: 6vw;
+    margin-bottom: 10vh; }
+    .uprising-effects-section__card--second {
+      grid-column: 6; }
