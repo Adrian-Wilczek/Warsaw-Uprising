@@ -106,8 +106,6 @@ a, a:link, a:visited {
       background-color: #f7f7f7; }
 
 .about-aside {
-  grid-row: 2;
-  grid-column: 4;
   display: flex;
   align-items: flex-end;
   margin-bottom: 5vh; }
@@ -133,10 +131,22 @@ a, a:link, a:visited {
   text-align: center;
   padding: .6rem;
   font-size: 2.5rem;
-  color: #f7f7f7;
-  margin-top: 10vh;
-  margin-left: 20rem;
-  margin-bottom: 5rem; }
+  color: #f7f7f7; }
+
+.ornament {
+  background-image: url(../images/ornament-image1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .ornament__content {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.394);
+    color: #f7f7f7;
+    font-size: 2.5rem;
+    width: 80%; }
 
 .container {
   overflow: hidden; }
@@ -190,5 +200,4 @@ a, a:link, a:visited {
     margin-bottom: 5rem; }
   .storm-section__about-aside {
     grid-row: 2;
-    grid-column: 4;
-    margin-bottom: 5vh; }
+    grid-column: 4; }
