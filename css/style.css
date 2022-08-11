@@ -139,19 +139,23 @@ a, a:link, a:visited {
   color: #f7f7f7; }
 
 .ornament {
-  background-image: url(../images/ornament-image1.jpg);
   background-position: center;
   background-size: cover;
   height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center; }
+  .ornament--bgimage1 {
+    background-image: url(../images/ornament-image1.jpg); }
+  .ornament--bgimage2 {
+    background-image: url(../images/ornament2.jpg); }
   .ornament__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.394);
     color: #f7f7f7;
     font-size: 2.5rem;
-    width: 80%; }
+    width: 80%;
+    padding: 1rem; }
 
 .container {
   overflow: hidden; }
@@ -179,7 +183,6 @@ a, a:link, a:visited {
   grid-row: 1; }
 
 .storm-section {
-  padding-top: 5rem;
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: 8rem repeat(2, 3fr) min-content; }
@@ -209,7 +212,6 @@ a, a:link, a:visited {
     grid-column: 4; }
 
 .decision-section {
-  padding-top: 5rem;
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: min-content  1fr 2fr 8rem; }

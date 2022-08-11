@@ -29,7 +29,7 @@
 }
 
 .section-header{
-    display: block;
+        display: block;
         margin-top: 10rem;
         display: flex;
         justify-content: center;
@@ -154,18 +154,25 @@
     
 }
 .ornament{
-    background-image: url(../images/ornament-image1.jpg);
     background-position: center;
     background-size: cover;
     height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    &--bgimage1
+    {
+        background-image: url(../images/ornament-image1.jpg);
+    }
+    &--bgimage2{
+        background-image: url(../images/ornament2.jpg);
+    }
     &__content{
         display: block;
         background-color: rgba(0, 0, 0, 0.394);
         color: $secondary-color;
         font-size: 2.5rem;
         width: 80%;
+        padding: 1rem;
     }
 }
