@@ -17,8 +17,8 @@
     <div class="container">
         <header class="header">
             <img class="header__image" src="images/uprising-symbol.png" alt="Symbol Powstania Warszawskiego">
-            <nav class="navigation">
-                <ul class="navigation__content">
+            <nav class="navigation-contener">
+                <ul class="navigation">
                     <li class="navigation__element"><a href="#">Plan Burza</a></li>
                     <li class="navigation__element"><a href="#">Decyzja</a></li>
                     <li class="navigation__element"><a href="#">Przebieg</a></li>
@@ -26,27 +26,28 @@
                     <li class="navigation__element navigation__element--last"><a href="#">Galeria zdjęć</a></li>
                 </ul>
             </nav>
-            <hgroup class="main-header">
+            <hgroup class="header__main-header main-header">
                 <h1>Powstanie Warszawskie</h1>
                 <p class="main-header__sentense">Dni polskiego honoru</p>
             </hgroup>
         </header>
-        <section>
-            <header>
-                <h2>Pomoc ze strony ZSRR - "Plan Burza"</h2>
+        <section class="storm-section">
+            <header class="storm-section__section-header section-header">
+                <h2 class="section-header__content">Pomoc ze strony ZSRR - "Plan Burza"</h2>
             </header>
-            <article>
+            <div class="storm-section__articles-container articles-container">
+            <article class="article">
                 <p>Jesienią 1943 stało się jasne, że Polska nie zostanie wyzwolona spod okupacji niemieckiej przez wojska aliantów zachodnich, lecz zajęta przez Armię Czerwoną.</p>
             </article>
-            <article>
+            <article class="article article--right">
                 <p>Plan „Burza” zakładał opanowanie Warszawy przez powstańców  i przywitanie Armii Radzieckiej w roli gospodarza; nadzieja na akceptacje rządu londyńskiego przez Sowietów.
                 </p>
             </article>
-            <a href="#">Zobacz więcej</a>
-            <img src="images/storm-image1.jpg" alt="Zdjęcie z obrońcami">
-            <img src="images/storm-image2.jpg" alt="Drugie zdjęcie z obrońcami">
-            <aside><p>20 Listopada 1943</p></aside>
-            <aside><p>Plan Burza</p></aside>
+            <div class="button storm-section__button"><a href="#">Zobacz więcej</a></div>
+            </div>
+            <img class="storm-section__image1" src="images/storm-image-1.jpg" alt="Zdjęcie z obrońcami">
+            <aside class="storm-section__time-aside time-aside"><div class="time-aside__content"><p class="time-aside__paragraph">20 Listopada 1943</p></div></aside>
+            <aside class="about-aside"><div class="about-aside__content"><p class="about-aside__paragraph">Plan Burza</p></div></aside>
         </section>
         
     </div>

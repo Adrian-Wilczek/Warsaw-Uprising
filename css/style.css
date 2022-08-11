@@ -16,29 +16,22 @@ body {
   line-height: 1.6; }
 
 a, a:link, a:visited {
-  color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 .main-header {
-  grid-column: 1 / -1;
-  grid-row: 3;
   text-align: center;
   color: #f7f7f7;
-  font-size: 4rem;
-  margin-bottom: 5vh; }
+  font-size: 4rem; }
   .main-header__sentense {
     color: #d80000;
     font-size: 3.5rem; }
 
 .navigation {
-  margin-top: 5vh;
-  grid-column: 3 / 4;
-  grid-row: 1; }
-  .navigation__content {
-    display: flex;
-    font-size: 3rem;
-    list-style: none;
-    color: #f7f7f7; }
+  display: flex;
+  font-size: 3rem;
+  list-style: none;
+  color: #f7f7f7; }
   .navigation__element {
     margin-right: 4rem;
     padding-right: 3rem;
@@ -49,6 +42,105 @@ a, a:link, a:visited {
     .navigation__element--last {
       border-right: none; }
 
+.section-header {
+  display: flex;
+  justify-content: center;
+  line-height: 3rem; }
+  .section-header::before {
+    content: "";
+    display: block;
+    width: 14vw;
+    height: .3rem;
+    background-color: #d80000; }
+  .section-header::after {
+    content: "";
+    display: block;
+    width: 14vw;
+    height: .3rem;
+    background-color: #d80000; }
+  .section-header__content {
+    color: #d80000;
+    font-size: 4.5rem;
+    padding: 0 3rem; }
+
+.articles-container {
+  display: flex;
+  flex-direction: column; }
+
+.article {
+  padding: 0 10rem;
+  color: #070707;
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 10vh;
+  text-align: center; }
+  .article--right {
+    transform: translateX(6rem); }
+
+.time-aside {
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .time-aside__paragraph {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    align-items: center;
+    display: flex;
+    color: #f7f7f7;
+    text-align: center;
+    transform: rotate(270deg); }
+    .time-aside__paragraph::before {
+      margin-right: 5rem;
+      content: "";
+      display: block;
+      width: 30vh;
+      height: .3rem;
+      background-color: #f7f7f7; }
+    .time-aside__paragraph::after {
+      margin-left: 5rem;
+      content: "";
+      display: block;
+      width: 30vh;
+      height: .3rem;
+      background-color: #f7f7f7; }
+
+.about-aside {
+  grid-row: 2;
+  grid-column: 4;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5vh; }
+  .about-aside__content {
+    background-color: #d80000;
+    height: 40vh;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .about-aside__paragraph {
+    display: block;
+    width: 10rem;
+    color: #f7f7f7;
+    font-size: 2rem;
+    transform: rotate(90deg); }
+
+.button {
+  display: block;
+  background-color: #d80000;
+  width: 30rem;
+  text-align: center;
+  padding: .6rem;
+  font-size: 2.5rem;
+  color: #f7f7f7;
+  margin-top: 10vh;
+  margin-left: 20rem;
+  margin-bottom: 5rem; }
+
+.container {
+  overflow: hidden; }
+
 .header {
   background-image: url(../images/header-image.jpg);
   background-position: center;
@@ -56,8 +148,47 @@ a, a:link, a:visited {
   background-repeat: no-repeat;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr;
   grid-template-columns: max-content 2fr max-content 1fr; }
   .header__image {
     width: 20rem;
     grid-area: 1 / 1; }
+  .header__main-header {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-bottom: 10vh; }
+
+.navigation-contener {
+  margin-top: 5vh;
+  grid-column: 3 / 4;
+  grid-row: 1; }
+
+.storm-section {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 8rem repeat(2, 3fr) min-content; }
+  .storm-section__image1 {
+    grid-column: 3 / 4;
+    grid-row: 2;
+    margin-top: 20vh;
+    width: 50rem;
+    z-index: 1;
+    transform: translateX(3rem); }
+  .storm-section__articles-container {
+    grid-row: 2;
+    grid-column: 2; }
+  .storm-section__section-header {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    margin-top: 8vh; }
+  .storm-section__time-aside {
+    grid-row: 1 / -1;
+    grid-column: 1; }
+  .storm-section__button {
+    margin-top: 10vh;
+    margin-left: 20rem;
+    margin-bottom: 5rem; }
+  .storm-section__about-aside {
+    grid-row: 2;
+    grid-column: 4;
+    margin-bottom: 5vh; }
