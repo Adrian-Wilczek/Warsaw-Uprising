@@ -28,10 +28,11 @@
     grid-row: 1;
 }
 .storm-section{
+    padding-top: 5rem;
     display: grid;
     grid-template-rows: min-content min-content;
     grid-template-columns: 8rem repeat(2, 3fr) min-content;
-    &__image1{
+    &__image{
 
         grid-column: 3 / 4;
         grid-row: 2;
@@ -62,5 +63,33 @@
     &__about-aside{
         grid-row: 2;
         grid-column: 4;
+    }
+}
+.decision-section{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: min-content  1fr 2fr 8rem;
+    &__section-header{
+        grid-row: 1;
+        grid-column: 1 / 5;
+        margin-top: 8vh;
+    }
+    &__time-aside{
+        grid-row: 1 / -1;
+        grid-column: 4;
+    }
+    &__articles-container{
+            justify-self: center;
+            grid-row: 2 ;
+            grid-column: 3;
+    }
+    &__image{
+
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 20vh;
+        margin-left: 10vw;
+        width: 35rem;
     }
 }

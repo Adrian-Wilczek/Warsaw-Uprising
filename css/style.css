@@ -43,9 +43,11 @@ a, a:link, a:visited {
       border-right: none; }
 
 .section-header {
+  display: block;
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
-  line-height: 3rem; }
+  line-height: 1rem; }
   .section-header::before {
     content: "";
     display: block;
@@ -64,6 +66,7 @@ a, a:link, a:visited {
     padding: 0 3rem; }
 
 .articles-container {
+  margin-top: 9vh;
   display: flex;
   flex-direction: column; }
 
@@ -90,6 +93,8 @@ a, a:link, a:visited {
     color: #f7f7f7;
     text-align: center;
     transform: rotate(270deg); }
+    .time-aside__paragraph--alt-rotate {
+      transform: rotate(90deg); }
     .time-aside__paragraph::before {
       margin-right: 5rem;
       content: "";
@@ -137,7 +142,7 @@ a, a:link, a:visited {
   background-image: url(../images/ornament-image1.jpg);
   background-position: center;
   background-size: cover;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -174,10 +179,11 @@ a, a:link, a:visited {
   grid-row: 1; }
 
 .storm-section {
+  padding-top: 5rem;
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: 8rem repeat(2, 3fr) min-content; }
-  .storm-section__image1 {
+  .storm-section__image {
     grid-column: 3 / 4;
     grid-row: 2;
     margin-top: 20vh;
@@ -201,3 +207,26 @@ a, a:link, a:visited {
   .storm-section__about-aside {
     grid-row: 2;
     grid-column: 4; }
+
+.decision-section {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content  1fr 2fr 8rem; }
+  .decision-section__section-header {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    margin-top: 8vh; }
+  .decision-section__time-aside {
+    grid-row: 1 / -1;
+    grid-column: 4; }
+  .decision-section__articles-container {
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 3; }
+  .decision-section__image {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    width: 35rem; }
