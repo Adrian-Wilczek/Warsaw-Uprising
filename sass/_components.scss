@@ -95,13 +95,15 @@
         &--alt-rotate{
             transform: rotate(90deg);
         }
+        
         &::before{
             margin-right: 5rem;
             content: "";
             display: block;
-            width: 30vh;
+            width: 40vh;
             height: .3rem;
             background-color: $secondary-color;
+            
             
         }
         &::after{
@@ -111,6 +113,7 @@
             width: 30vh;
             height: .3rem;
             background-color: $secondary-color;
+           
             
         }
         
@@ -131,6 +134,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        &--decision{
+            height: 30vh;
+            text-align: center;
+        }
         
     }
     &__paragraph
@@ -174,5 +181,31 @@
         font-size: 2.5rem;
         width: 80%;
         padding: 1rem;
+    }
+}
+
+.day-container{
+    margin-top: 14vh;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(174, 166, 166);
+    
+    
+    &__heading{
+        color: $primary-color;
+        font-size: 4rem;
+        order: 1;
+        &--col2{
+            order: 2;
+        }
+    }
+    &__content{
+        display: block;
+        width: 50%;
+        color: $main-font-color;
+        font-size: 2rem;
+        order: 1;
     }
 }

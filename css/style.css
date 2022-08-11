@@ -99,7 +99,7 @@ a, a:link, a:visited {
       margin-right: 5rem;
       content: "";
       display: block;
-      width: 30vh;
+      width: 40vh;
       height: .3rem;
       background-color: #f7f7f7; }
     .time-aside__paragraph::after {
@@ -122,6 +122,9 @@ a, a:link, a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    .about-aside__content--decision {
+      height: 30vh;
+      text-align: center; }
   .about-aside__paragraph {
     display: block;
     width: 10rem;
@@ -156,6 +159,26 @@ a, a:link, a:visited {
     font-size: 2.5rem;
     width: 80%;
     padding: 1rem; }
+
+.day-container {
+  margin-top: 14vh;
+  padding-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #aea6a6; }
+  .day-container__heading {
+    color: #d80000;
+    font-size: 4rem;
+    order: 1; }
+    .day-container__heading--col2 {
+      order: 2; }
+  .day-container__content {
+    display: block;
+    width: 50%;
+    color: #070707;
+    font-size: 2rem;
+    order: 1; }
 
 .container {
   overflow: hidden; }
@@ -232,3 +255,29 @@ a, a:link, a:visited {
     margin-top: 20vh;
     margin-left: 10vw;
     width: 35rem; }
+
+.uprising-time-section {
+  display: grid;
+  grid-template-columns: 8rem 1fr min-content;
+  grid-template-rows: repeat(4, min-content);
+  padding-bottom: 10vh; }
+  .uprising-time-section__time-aside {
+    grid-row: 1 / 8;
+    grid-column: 1; }
+  .uprising-time-section__about-aside {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    grid-row: 2;
+    grid-column: 5; }
+  .uprising-time-section__button {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 7;
+    margin-top: 10vh; }
+
+.all-days-container {
+  margin-top: 10vh;
+  grid-column: 2 / 3;
+  width: 90%;
+  margin-left: 5vw; }
