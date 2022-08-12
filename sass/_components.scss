@@ -30,9 +30,9 @@
 
 .section-header{
         display: block;
-        margin-top: 10rem;
         display: flex;
         justify-content: center;
+        margin-top: 10rem;
         line-height: 1rem;
     &::before{
             
@@ -67,11 +67,11 @@
 
 
 .article{
+    display: block;
     padding: 0 10rem;
     color: $main-font-color;
     font-size: 2.5rem;
     background-color: rgba(256, 256, 256, 0.6);
-    margin-top: 10vh;
     text-align: center;
     &--right{
         transform: translateX(6rem);
@@ -124,16 +124,14 @@
 
 }
 .about-aside{
-    
     align-self: center;
-    
     &__content{
         background-color: $primary-color;
         height: 40vh;
         width: 5rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         &--decision{
             height: 30vh;
@@ -148,6 +146,9 @@
         color: $secondary-color;
         font-size: 2rem;
         transform: rotate(90deg);
+        &--large{
+            width: 20rem;
+        }
         
     }
 }
@@ -271,5 +272,9 @@
             padding: 2rem;
             text-align: center;
         }
+    }
+    .gallery{
+        overflow: hidden;
+        width: 100%;
     }
    
