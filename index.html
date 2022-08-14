@@ -28,9 +28,10 @@
             </nav>
             <hgroup class="header__main-header main-header">
                 <h1>Powstanie Warszawskie</h1>
-                <p class="main-header__sentense">Dni polskiego honoru</p>
+                <span class="main-header__sentense">Dni polskiego honoru</span>
             </hgroup>
         </header>
+        <main>
         <section id="storm-section" class="storm-section">
             <header class="storm-section__section-header section-header">
                 <h2 class="section-header__content">Pomoc ze strony ZSRR - "Plan Burza"</h2>
@@ -152,7 +153,7 @@
         <div class="ornament ornament--bgimage4">
             <p class="ornament__content ornament__content--4"><q>Tak, właśnie to, że to już spokój. Koniec. Po wszystkim. Dwieście tysięcy ludzi leży pod gruzami. Razem z Warszawą.</q><cite> -  Miron Białoszewski, Pamiętnik z powstania warszawskiego</cite></p>
         </div>
-        <section class="gallery-section">
+        <section id="gallery" class="gallery-section">
             <header class="section-header gallery-section__section-header ">
                 <h2 class="section-header__content">Galeria zdjęć</h2>
             </header>
@@ -163,7 +164,7 @@
             <div class="gallery__image4"><img class="gallery-img" src="images/gallery4.jpg" alt="Zdjęcie ludzi z karabinem"></div>
             <div class="gallery__image5"><img class="gallery-img" src="images/gallery5.jpg" alt="Zdjęcie grupowe obrońców"></div>
             <div class="gallery__image6"><img class="gallery-img" src="images/gallery6.png" alt="Żołnierze biegnący ulicą"></div>
-            <div class="button gallery__button button--large"><a href="#">Warszawa teraz</a></div>
+            <div class="button gallery__button button--large"><a href="#popup">Warszawa teraz</a></div>
             </div>
             <aside class="gallery-section__about-aside"><div class="about-aside__content about-aside__content--decision"><p class="about-aside__paragraph about-aside__paragraph--large">Galeria zdjęć</p></div></aside>
         </section>
@@ -177,10 +178,17 @@
                     <li class="navigation__element navigation__element--last navigation__element--small"><a href="#">Galeria zdjęć</a></li>
                 </ul>
             </nav>
-            <p class="restricted-paragraph">&copy; Adrian Wilczek 2022. Wszelkie prawa zastrzeżone.</p>
+            <p class="restricted-paragraph footer__restricted-paragraph">&copy; Adrian Wilczek 2022. Wszelkie prawa zastrzeżone.</p>
         </footer>
-
+    </main>
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <video class="popup__video" src="videos/warsaw.mp4" loop="loop" autoplay="autoplay"></video>
+            <audio src="audio/Arkadiusz Wilczek - Walc Niepodległy (Independent Waltz).mp4"></audio>
+            <div class="button popup__button"><a href="#gallery">Wyjdź</a></div>
+        </div>
     </div>
+ </div>
     
 </body>
 </html>
