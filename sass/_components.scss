@@ -22,6 +22,9 @@
         &:hover{
             color: $primary-color;
         }
+        &--small{
+            font-size: 2.5rem;
+        }
         &--last{
             border-right: none;
         }
@@ -161,7 +164,8 @@
     font-size: 2.5rem;
     color: $secondary-color;
     &--large{
-        width: 40rem;
+        width: 35rem;
+        font-size: 3rem;
     }
     
 }
@@ -288,4 +292,11 @@
         object-fit: cover;
         overflow: hidden;
     }
-   
+   .restricted-paragraph{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        color: $secondary-color;
+        font-size: 2rem;
+        
+   }
