@@ -490,6 +490,9 @@
         @include big-tablets{
             margin-top: 2vh;
         }
+        @include huge-phone{
+            margin-top: 0;
+        }
 
     }
 }
@@ -521,4 +524,7 @@
         display: flex;
         justify-content: center;
         margin-top: 10vh;
+        @include huge-phone{
+            margin-top: 0;
+        }
 }
