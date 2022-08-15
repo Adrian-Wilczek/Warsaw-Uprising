@@ -152,7 +152,7 @@ a, a:link, a:visited {
         font-size: 4.3rem; } }
     @media (max-width: 400px) {
       .section-header__content {
-        font-size: 3.7rem; } }
+        font-size: 3.5rem; } }
     @media (max-width: 350px) {
       .section-header__content {
         font-size: 5rem; } }
