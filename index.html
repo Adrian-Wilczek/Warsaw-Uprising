@@ -19,11 +19,11 @@
             <img class="header__image" src="images/uprising-symbol.png" alt="Symbol Powstania Warszawskiego">
             <nav class="header__navigation-container">
                 <ul class="navigation header__navigation">
-                    <li class="navigation__element navigation__element--main"><a href="#storm-section">Plan Burza</a></li>
-                    <li class="navigation__element navigation__element--main"><a href="#decision-section">Decyzja</a></li>
+                    <li class="navigation__element navigation__element--main navigation__element--invisible"><a href="#storm-section">Plan Burza</a></li>
+                    <li class="navigation__element navigation__element--main navigation__element--invisible"><a href="#decision-section">Decyzja</a></li>
                     <li class="navigation__element navigation__element--main"><a href="#uprising-time-section">Przebieg</a></li>
-                    <li class="navigation__element navigation__element--main"><a href="#">Skutki</a></li>
-                    <li class="navigation__element navigation__element--last navigation__element--main"><a href="#">Galeria zdjęć</a></li>
+                    <li class="navigation__element navigation__element--main navigation__element--invisible"><a href="#effects">Skutki</a></li>
+                    <li class="navigation__element navigation__element--last navigation__element--main"><a href="#gallery">Galeria zdjęć</a></li>
                 </ul>
             </nav>
             <hgroup class="header__main-header main-header">
@@ -44,7 +44,7 @@
                 <p>Plan „Burza” zakładał opanowanie Warszawy przez powstańców  i przywitanie Armii Radzieckiej w roli gospodarza; nadzieja na akceptacje rządu londyńskiego przez Sowietów.
                 </p>
             </article>
-            <div class="button storm-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
+            <div class="button storm-section__button"><a class="button__content" href="https://pl.wikipedia.org/wiki/Akcja_%E2%80%9EBurza%E2%80%9D">Zobacz więcej</a></div>
             </div>
             <img class="storm-section__image" src="images/storm1.jpg" alt="Zdjęcie z obrońcami">
             <aside class="storm-section__time-aside time-aside"><p class="time-aside__paragraph">20 Listopada 1943</p></aside>
@@ -65,7 +65,7 @@
                     <p>Po podjęciu decyzji o powstaniu w Warszawie do ustalenia pozostawał tylko termin jego wybuchu.
                     </p>
                 </article>
-                <div class="button storm-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
+                <div class="button storm-section__button"><a class="button__content" href="https://dzieje.pl/aktualnosci/dowodca-ak-wydal-rozkaz-o-rozpoczeciu-powstania-w-warszawie">Zobacz więcej</a></div>
             </div>
             <img class="decision-section__image" src="images/komorowski.png" alt="Zdjęcie z obrońcami">
             <aside class="decision-section__time-aside time-aside"><p class="time-aside__paragraph time-aside__paragraph--alt-rotate">20 Listopada 1943</p></aside>
@@ -74,11 +74,11 @@
         <div class="ornament ornament--bgimage2">
             <p class="ornament__content">„Gen. Bór-Komorowski po konsultacji z szefem sztabu gen. Pełczyńskim, szefem operacji gen. Okulickim, komendantem okręgu płk. Chruścielem i delegatem rządu na kraj Janem Jankowskim podjął decyzję o rozpoczęciu powstania w Warszawie o godz. 17:00 następnego dnia - 1 sierpnia 1944."</p>
         </div>
-        <section class="uprising-time-section">
+        <section id="uprising-time-section" class="uprising-time-section">
             <header class="uprising-time-section__section-header section-header">
-                <h2 class="section-header__content">Przebieg powstania</h2>
+                <h2 class="section-header__content section-header__content--large">Przebieg powstania</h2>
             </header>
-            <div class="all-days-container">
+            <div class="all-days-container uprising-time-section__all-days-container">
             <div class="day-container all-days-container__day-container">
                 <h3 class="day-container__heading">Dzień 1</h3>
                 <p class="day-container__content">Godz. 7.00 – łączniczki alarmowe otrzymują rozkaz Komendanta Okręgu Warszawskiego AK płk. dypl. Antoniego Chruściela „Montera” o ustaleniu Godziny „W” na 1 sierpnia, godzina 17.00.</p>
@@ -105,7 +105,7 @@
                 
             </div>
             </div>
-            <div class="button uprising-time-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
+            <div class="button uprising-time-section__button"><a class="button__content" href="https://www.1944.pl/kalendarz-powstania.html">Zobacz więcej</a></div>
             <aside class="time-aside uprising-time-section__time-aside"><p class="time-aside__paragraph time-aside--longer">20 Listopada 1943</p></aside>
             <aside class="uprising-time-section__about-aside"><div class="about-aside__content about-aside__content--decision"><p class="about-aside__paragraph">Przebieg</p></div></aside>
         
@@ -113,13 +113,13 @@
         <div class="ornament ornament--bgimage3">
             <p class="ornament__content ornament__content--3"><q>Jestem przekonany, że etos powstania warszawskiego nie kieruje narodowej wyobraźni w stronę apologii romantycznej klęski. Etos powstania warszawskiego buduje współczesne poczucie służby, współczesne poczucie skromności Szarego Szeregu, bezwarunkowego poświęcenia własnych spraw na rzecz wolności wspólnej.</q><cite> - Bronisław Komorowski</cite></p>
         </div>
-        <section class="uprising-effects-section">
+        <section id="effects" class="uprising-effects-section">
             <header class="section-header uprising-effects-section__section-header ">
-                <h2 class="section-header__content">Skutki powstania</h2>
+                <h2 class="section-header__content section-header__content--large">Skutki powstania</h2>
             </header>
             <article class="article uprising-effects-section__article">
                 <p>Przegrane powstanie niosło za sobą wiele konsekwencji i negatywnych skutków, jednak miało też trochę pozytywnych.</p>
-                <div class="button uprising-effects-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
+                <div class="button uprising-effects-section__button"><a class="button__content" href="https://pl.wikipedia.org/wiki/Skutki_powstania_warszawskiego">Zobacz więcej</a></div>
             </article>
             
             <div class="card uprising-effects-section__card">
@@ -155,7 +155,7 @@
         </div>
         <section id="gallery" class="gallery-section">
             <header class="section-header gallery-section__section-header ">
-                <h2 class="section-header__content">Galeria zdjęć</h2>
+                <h2 class="section-header__content section-header__content--large">Galeria zdjęć</h2>
             </header>
             <div class="gallery gallery-section__gallery">
             <div class="gallery__image1"><img class="gallery-img" src="images/gallery1.jpg" alt="Żołnierze przemierzający ulice"></div>

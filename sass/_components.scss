@@ -5,17 +5,20 @@
     @include big-tablets{
         font-size: 5rem;
     }
+    @include small-tablets{
+        font-size: 6rem;
+    }
+   
     
     
     &__sentense{
         color: $primary-color;
         font-size: 3.5rem;
+        
         @include small-tablets{
-            font-size: 4rem;
-        }
-        @include small-tablets{
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
+    
     }
 }
 
@@ -26,41 +29,42 @@
     @include big-tablets{
         font-size: 3.5rem;
     }
+    @include tablets{
+        font-size: 4rem;
+    }
     @include small-tablets{
         font-size: 4.5rem;
     }
-    @include big-phone{
-        font-size: 5.5rem;
+    @include huge-phone{
+        font-size: 5rem;
     }
+    
     
     &__element{
         border-right: solid 2px $primary-color;
         transition: all 0.6s;
-        &--main{
-            @include small-tablets{
-                background-color: rgba(0, 0, 0, 0.192);
-                border: 3px solid white;
-                text-align: center;
-                width: 35rem;
-                padding: 1rem 4rem;
-                flex-shrink: 0;
-            }
+        @include huge-phone{
+            border: 3px solid rgb(52, 52, 52);
+            text-align: center;
+            padding: 0.5rem 6rem;
+            background-color: rgba(0, 0, 0, 0.257);
+            width: 30rem;
+        }
+        &:hover{
+            color: $primary-color;
+        }
+        &--main{ 
             @include big-phone{
                 width: 30rem;
             }
-            
-        }
-        
-        &:hover{
-            color: $primary-color;
         }
         &--small{
             font-size: 2.5rem;
         }
         &--last{
             border-right: none;
-            @include small-tablets{
-                border-right: 3px solid white;
+            @include huge-phone{
+                border-right: 3px solid rgb(52, 52, 52)
             }
         }
     }
@@ -88,7 +92,9 @@
         @include tablets{
             width: 18rem
         }
-        
+        @include huge-phone{
+            width: 13rem
+        }
         
     }
     &::after{
@@ -99,6 +105,9 @@
         background-color: $primary-color;
         @include tablets{
             width: 18rem
+        }
+        @include huge-phone{
+            width: 13rem
         }
         
     }
@@ -111,6 +120,29 @@
                 
                 font-size: 5rem;
             }
+            @include huge-phone{
+                
+                font-size: 4rem;
+            }
+            @include big-phone{
+                font-size: 4.3rem;
+            }
+            @include phone{
+                font-size: 3.5rem;
+            }
+            @include small-phone{
+                font-size: 5rem;
+            }
+            &--large{
+                @include big-phone{
+                    font-size: 5rem;
+                }
+                @include phone{
+                    font-size: 6rem;
+                }
+            }
+
+            
     }
 }
 .articles-container{
@@ -127,9 +159,14 @@
     font-size: 2.5rem;
     background-color: rgba(256, 256, 256, 0.6);
     text-align: center;
-    
+    @include huge-phone{
+        font-size: 3rem;
+    }
     &--right{
         transform: translateX(6rem);
+        @include huge-phone{
+            transform: none;
+        }
     }
     
 }
@@ -139,6 +176,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    @include huge-phone{
+        display: none;
+    }
     &__paragraph{
         font-size: 2.7rem;
         line-height: 3rem;
@@ -180,6 +220,10 @@
 }
 .about-aside{
     align-self: center;
+    @include huge-phone{
+        display: none;
+    }
+    
     &__content{
         background-color: $primary-color;
         height: 30rem;
@@ -227,8 +271,16 @@
         font-size: 3rem;
         width: 33rem;
     }
+    
     @include tablets{
         font-size: 3rem;
+        width: 35rem;
+    }
+    @include small-tablets{
+        font-size: 3.5rem;
+    }
+    @include big-phone{
+        font-size: 4rem;
         width: 35rem;
     }
     &__content{
@@ -245,6 +297,13 @@
         @include tablets{
             font-size: 3.5rem;
             width: 40rem;
+        }
+        @include small-tablets{
+            font-size: 4rem;
+        }
+        @include big-phone{
+            font-size: 4.5rem;
+            width: 43rem;
         }
     }
     
@@ -298,6 +357,9 @@
         color: $primary-color;
         font-size: 4.5rem;
         order: 1;
+        @include big-phone{
+            font-size: 5rem;
+        }
         &--col2{
             order: 2;
         }
@@ -308,6 +370,9 @@
         color: $main-font-color;
         font-size: 2.5rem;
         order: 1;
+        @include big-phone{
+            font-size: 3rem;
+        }
     }
 }
 
@@ -318,6 +383,12 @@
         height: 45rem;
         transform-style: preserve-3d;
         transition: all 0.9s ease;
+        @include huge-phone{
+            justify-self: center;
+            margin: 0 10vw;
+            width: 31vw;
+            height: 55rem;
+        }
         &:hover{
             transform: translateY(-2rem) rotateY(180deg) ;
             
@@ -389,6 +460,12 @@
         margin-top: 10vh;
         color: $secondary-color;
         font-size: 2rem;
+        @include huge-phone{
+           font-size: 4rem;
+        }
+        @include phone{
+            font-size: 3rem;
+        }
         
    }
 .popup{
@@ -428,10 +505,7 @@
     &:target &__content {
         opacity: 1;
     }
-    &__text{
-        
-        background-color: rgba(255, 255, 255, 0.872);
-    }
+    
     
 }
 
