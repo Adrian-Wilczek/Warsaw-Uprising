@@ -4,11 +4,16 @@
   "description": "The website about Warsaw Uprising.",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass sass/main.scss css/style.css -w"
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed"
   },
   "author": "Adrian Wilczek",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "autoprefixer": "^10.4.8",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^10.0.0"
   }
 }

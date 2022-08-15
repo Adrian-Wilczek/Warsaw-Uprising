@@ -2,10 +2,6 @@
     overflow: hidden;
 }
 .header{
-    background-image:  url(../images/header.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     min-height: 100vh;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -81,13 +77,45 @@
                 display: none;
             }
         }
-        
-
-        
     }
 }
-
-
+.section-header{
+    margin-top: 10vh;
+    @include big-tablets{
+        margin-top: 7vh;
+    }
+}
+.articles-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about-aside{
+    align-self: center;
+   
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @include huge-phone{
+        display: none;
+    }
+    
+}
+.ornament{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .storm-section{
     display: grid;
     grid-template-rows: min-content min-content;
@@ -276,6 +304,11 @@
     }
 
 }
+.day-container{
+    display: flex;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+}
 .uprising-effects-section
 {
     display: grid;
@@ -448,7 +481,31 @@
     }
 }
 .popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__button{
         margin: 2vh auto 0 auto;
     }
+}
+.card{
+    @include huge-phone{
+        justify-self: center;
+        margin: 0 10vw;
+    }
+    &__front{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+    }
+    &__paragraph{
+        margin-top: 2rem;
+    }
+}
+.restricted-paragraph{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
 }
