@@ -416,6 +416,9 @@
             justify-self: center;
             margin-top: 5vh;
             transform: translate(5vw);
+            @include huge-phone{
+                transform: none;
+            }
         }
 }
 .footer{

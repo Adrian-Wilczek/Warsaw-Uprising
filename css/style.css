@@ -811,6 +811,9 @@ a, a:link, a:visited {
     justify-self: center;
     margin-top: 5vh;
     transform: translate(5vw); }
+    @media (max-width: 600px) {
+      .gallery__button {
+        transform: none; } }
 
 .footer {
   padding: 7vh 5vw;
