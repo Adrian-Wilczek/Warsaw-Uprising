@@ -18,12 +18,12 @@
         <header class="header">
             <img class="header__image" src="images/uprising-symbol.png" alt="Symbol Powstania Warszawskiego">
             <nav class="header__navigation-container">
-                <ul class="navigation">
-                    <li class="navigation__element"><a href="#storm-section">Plan Burza</a></li>
-                    <li class="navigation__element"><a href="#decision-section">Decyzja</a></li>
-                    <li class="navigation__element"><a href="#uprising-time-section">Przebieg</a></li>
-                    <li class="navigation__element"><a href="#">Skutki</a></li>
-                    <li class="navigation__element navigation__element--last"><a href="#">Galeria zdjęć</a></li>
+                <ul class="navigation header__navigation">
+                    <li class="navigation__element navigation__element--main"><a href="#storm-section">Plan Burza</a></li>
+                    <li class="navigation__element navigation__element--main"><a href="#decision-section">Decyzja</a></li>
+                    <li class="navigation__element navigation__element--main"><a href="#uprising-time-section">Przebieg</a></li>
+                    <li class="navigation__element navigation__element--main"><a href="#">Skutki</a></li>
+                    <li class="navigation__element navigation__element--last navigation__element--main"><a href="#">Galeria zdjęć</a></li>
                 </ul>
             </nav>
             <hgroup class="header__main-header main-header">
@@ -33,7 +33,7 @@
         </header>
         <main>
         <section id="storm-section" class="storm-section">
-            <header class="storm-section__section-header section-header">
+            <header class="storm-section__section-header section-header section-header--small">
                 <h2 class="section-header__content">Pomoc ze strony ZSRR - "Plan Burza"</h2>
             </header>
             <div class="articles-container storm-section__articles-container ">
@@ -44,7 +44,7 @@
                 <p>Plan „Burza” zakładał opanowanie Warszawy przez powstańców  i przywitanie Armii Radzieckiej w roli gospodarza; nadzieja na akceptacje rządu londyńskiego przez Sowietów.
                 </p>
             </article>
-            <div class="button storm-section__button"><a href="#">Zobacz więcej</a></div>
+            <div class="button storm-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
             </div>
             <img class="storm-section__image" src="images/storm1.jpg" alt="Zdjęcie z obrońcami">
             <aside class="storm-section__time-aside time-aside"><p class="time-aside__paragraph">20 Listopada 1943</p></aside>
@@ -65,7 +65,7 @@
                     <p>Po podjęciu decyzji o powstaniu w Warszawie do ustalenia pozostawał tylko termin jego wybuchu.
                     </p>
                 </article>
-                <div class="button storm-section__button"><a href="#">Zobacz więcej</a></div>
+                <div class="button storm-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
             </div>
             <img class="decision-section__image" src="images/komorowski.png" alt="Zdjęcie z obrońcami">
             <aside class="decision-section__time-aside time-aside"><p class="time-aside__paragraph time-aside__paragraph--alt-rotate">20 Listopada 1943</p></aside>
@@ -105,7 +105,7 @@
                 
             </div>
             </div>
-            <div class="button uprising-time-section__button"><a href="#">Zobacz więcej</a></div>
+            <div class="button uprising-time-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
             <aside class="time-aside uprising-time-section__time-aside"><p class="time-aside__paragraph time-aside--longer">20 Listopada 1943</p></aside>
             <aside class="uprising-time-section__about-aside"><div class="about-aside__content about-aside__content--decision"><p class="about-aside__paragraph">Przebieg</p></div></aside>
         
@@ -119,7 +119,7 @@
             </header>
             <article class="article uprising-effects-section__article">
                 <p>Przegrane powstanie niosło za sobą wiele konsekwencji i negatywnych skutków, jednak miało też trochę pozytywnych.</p>
-                <div class="button uprising-effects-section__button"><a href="#">Zobacz więcej</a></div>
+                <div class="button uprising-effects-section__button"><a class="button__content" href="#">Zobacz więcej</a></div>
             </article>
             
             <div class="card uprising-effects-section__card">
@@ -164,7 +164,7 @@
             <div class="gallery__image4"><img class="gallery-img" src="images/gallery4.jpg" alt="Zdjęcie ludzi z karabinem"></div>
             <div class="gallery__image5"><img class="gallery-img" src="images/gallery5.jpg" alt="Zdjęcie grupowe obrońców"></div>
             <div class="gallery__image6"><img class="gallery-img" src="images/gallery6.png" alt="Żołnierze biegnący ulicą"></div>
-            <div class="button gallery__button button--large"><a href="#popup">Warszawa teraz</a></div>
+            <div class="button gallery__button button--large"><a class="button__content" href="#popup">Warszawa teraz</a></div>
             </div>
             <aside class="gallery-section__about-aside"><div class="about-aside__content about-aside__content--decision"><p class="about-aside__paragraph about-aside__paragraph--large">Galeria zdjęć</p></div></aside>
         </section>
@@ -175,7 +175,7 @@
                     <li class="navigation__element navigation__element--small"><a href="#decision-section">Decyzja</a></li>
                     <li class="navigation__element navigation__element--small"><a href="#uprising-time-section">Przebieg</a></li>
                     <li class="navigation__element navigation__element--small"><a href="#">Skutki</a></li>
-                    <li class="navigation__element navigation__element--last navigation__element--small"><a href="#">Galeria zdjęć</a></li>
+                    <li class="navigation__element  navigation__element--small"><a href="#">Galeria zdjęć</a></li>
                 </ul>
             </nav>
             <p class="restricted-paragraph footer__restricted-paragraph">&copy; Adrian Wilczek 2022. Wszelkie prawa zastrzeżone.</p>
@@ -184,8 +184,7 @@
     <div id="popup" class="popup">
         <div class="popup__content">
             <video class="popup__video" src="videos/warsaw.mp4" loop="loop" autoplay="autoplay"></video>
-            <audio src="audio/Arkadiusz Wilczek - Walc Niepodległy (Independent Waltz).mp4"></audio>
-            <div class="button popup__button"><a href="#gallery">Wyjdź</a></div>
+            <div class="button popup__button"><a class="button__content" href="#gallery">Wyjdź</a></div>
         </div>
     </div>
  </div>

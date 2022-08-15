@@ -2,6 +2,31 @@
     $primary-color: rgb(216, 0, 0);
     $secondary-color: rgb(247, 247, 247);
     $main-font-color: rgb(7, 7, 7);
+// Mixins
+    @mixin small-laptops {
+        @media (max-width: 1250px) { @content; }
+    }
+    @mixin big-tablets {
+        @media (max-width: 1100px) { @content; }
+    }
+    @mixin tablets {
+        @media (max-width: 1000px) { @content; }
+    }
+    @mixin small-tablets {
+        @media (max-width: 850px) { @content; }
+    }
+    @mixin tablet-phone {
+        @media (max-width: 750px) { @content; }
+    }
+    @mixin huge-phone {
+        @media (max-width: 600px) { @content; }
+    }
+    @mixin big-phone {
+        @media (max-width: 500px) { @content; }
+    }
+    @mixin phone {
+        @media (max-width: 400px) { @content; }
+    }
 // Basic reset 
 * {
     margin: 0;
@@ -17,6 +42,28 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    @include small-laptops{
+        font-size: 9px;
+    }
+    @include big-tablets(){
+        font-size: 8px;
+    }
+    @include tablets{
+        font-size: 7px;
+    }
+    @include small-tablets{
+        font-size: 6px;
+    }
+    @include tablet-phone{
+        font-size: 5px;
+    }
+    @include big-phone{
+        font-size: 4px;
+    }
+    @include phone{
+        font-size: 3px;
+    }
+   
 }
 
 body {

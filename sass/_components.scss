@@ -2,23 +2,55 @@
     text-align: center;
     color: $secondary-color;
     font-size: 4rem;
+    @include big-tablets{
+        font-size: 5rem;
+    }
+    
     
     &__sentense{
         color: $primary-color;
         font-size: 3.5rem;
+        @include small-tablets{
+            font-size: 4rem;
+        }
+        @include small-tablets{
+        font-size: 4.5rem;
+    }
     }
 }
 
 .navigation{
-    display: flex;
     font-size: 3rem;
     list-style: none;
     color: $secondary-color;
+    @include big-tablets{
+        font-size: 3.5rem;
+    }
+    @include small-tablets{
+        font-size: 4.5rem;
+    }
+    @include big-phone{
+        font-size: 5.5rem;
+    }
+    
     &__element{
-        margin-right: 4rem;
-        padding-right: 3rem;
         border-right: solid 2px $primary-color;
         transition: all 0.6s;
+        &--main{
+            @include small-tablets{
+                background-color: rgba(0, 0, 0, 0.192);
+                border: 3px solid white;
+                text-align: center;
+                width: 35rem;
+                padding: 1rem 4rem;
+                flex-shrink: 0;
+            }
+            @include big-phone{
+                width: 30rem;
+            }
+            
+        }
+        
         &:hover{
             color: $primary-color;
         }
@@ -27,6 +59,9 @@
         }
         &--last{
             border-right: none;
+            @include small-tablets{
+                border-right: 3px solid white;
+            }
         }
     }
 }
@@ -35,47 +70,64 @@
         display: block;
         display: flex;
         justify-content: center;
-        margin-top: 10rem;
+        margin-top: 10vh;
         line-height: 1rem;
+        @include big-tablets{
+            margin-top: 7vh;
+        }
+        
+        
+        
     &::before{
             
         content: "";
         display: block;
-        width: 14vw;
+        width: 20rem;
         height: .3rem;
         background-color: $primary-color;
+        @include tablets{
+            width: 18rem
+        }
+        
+        
     }
     &::after{
         content: "";
         display: block;
-        width: 14vw;
+        width: 20rem;
         height: .3rem;
         background-color: $primary-color;
+        @include tablets{
+            width: 18rem
+        }
+        
     }
     &__content{
             
             color: $primary-color;
             font-size: 4.5rem;
             padding: 0 3rem;
-            
-        
-        
+            @include big-tablets{
+                
+                font-size: 5rem;
+            }
     }
-    
 }
 .articles-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
 .article{
     display: block;
-    padding: 0 10rem;
+    padding: 0 7vw;
     color: $main-font-color;
     font-size: 2.5rem;
     background-color: rgba(256, 256, 256, 0.6);
     text-align: center;
+    
     &--right{
         transform: translateX(6rem);
     }
@@ -130,14 +182,14 @@
     align-self: center;
     &__content{
         background-color: $primary-color;
-        height: 40vh;
+        height: 30rem;
         width: 5rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         &--decision{
-            height: 30vh;
+            height: 25rem;
             text-align: center;
         }
         
@@ -148,7 +200,12 @@
         width: 10rem;
         color: $secondary-color;
         font-size: 2rem;
+        text-align: center;
         transform: rotate(90deg);
+        @include big-tablets{
+            font-size: 2.5rem;
+            width: 15rem;
+        }
         &--large{
             width: 20rem;
         }
@@ -163,9 +220,32 @@
     padding: .6rem;
     font-size: 2.5rem;
     color: $secondary-color;
+    @include small-laptops{
+        font-size: 2.8rem;
+    }
+    @include big-tablets{
+        font-size: 3rem;
+        width: 33rem;
+    }
+    @include tablets{
+        font-size: 3rem;
+        width: 35rem;
+    }
+    &__content{
+        display: block;
+        width: 100%;
+    }
     &--large{
         width: 35rem;
         font-size: 3rem;
+        @include big-tablets{
+            font-size: 3.4rem;
+            width: 37rem;
+        }
+        @include tablets{
+            font-size: 3.5rem;
+            width: 40rem;
+        }
     }
     
 }
@@ -176,6 +256,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include big-tablets{
+        height: 20rem;
+    }
     &--bgimage1
     {
         background-image: url(../images/ornament1.jpg);
@@ -204,9 +287,9 @@
 }
 
 .day-container{
-    padding-bottom: 5rem;
     width: 100%;
     display: flex;
+    padding-bottom: 5rem;
     justify-content: space-around;
     border-bottom: 2px solid rgb(174, 166, 166);
     
@@ -291,6 +374,14 @@
         max-height: 50vh;
         object-fit: cover;
         overflow: hidden;
+        transition: 0.4s;
+        &:hover
+        {
+            z-index: 1;
+            position: relative;
+            cursor: pointer;
+            filter: contrast(200%);
+        }
     }
    .restricted-paragraph{
         display: flex;
@@ -316,8 +407,8 @@
     align-items: center;
     &__content{
         display: block;
-        width: 80%;
-        background-color: $secondary-color;
+        width: 70%;
+        background-color: $main-font-color;
         box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
         border-radius: 3px;
         overflow: hidden;
@@ -341,8 +432,6 @@
         
         background-color: rgba(255, 255, 255, 0.872);
     }
-    &__button{
-        margin: 2vh auto 0 auto;
-    }
+    
 }
 
