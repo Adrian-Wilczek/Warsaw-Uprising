@@ -504,7 +504,7 @@
 .card{
     @include huge-phone{
         justify-self: center;
-        margin: 0 10vw;
+        margin: 2vh 10vw;
     }
     &__front{
             overflow: hidden;
