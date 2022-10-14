@@ -1,185 +1,219 @@
-.header{
-    background-image:  url(../images/header.jpg);
+.header {
+    background-image: url(../images/header.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-header{
+
+.main-header {
     text-align: center;
     color: $secondary-color;
     font-size: 4rem;
-    @include big-tablets{
+
+    @include big-tablets {
         font-size: 5rem;
     }
-    @include small-tablets{
+
+    @include small-tablets {
         font-size: 6rem;
     }
-    &__sentense{
+
+    &__sentense {
         color: $primary-color;
         font-size: 3.5rem;
-        @include small-tablets{
+
+        @include small-tablets {
             font-size: 5rem;
         }
-    
+
     }
 }
 
-.navigation{
+.navigation {
     font-size: 3rem;
     list-style: none;
     color: $secondary-color;
-    @include big-tablets{
+
+    @include big-tablets {
         font-size: 3.5rem;
     }
-    @include tablets{
+
+    @include tablets {
         font-size: 4rem;
     }
-    @include small-tablets{
+
+    @include small-tablets {
         font-size: 4.5rem;
     }
-    @include huge-phone{
+
+    @include huge-phone {
         font-size: 5rem;
     }
-    
-    
-    &__element{
+
+
+    &__element {
         border-right: solid 2px $primary-color;
         transition: all 0.6s;
-        @include huge-phone{
+
+        @include huge-phone {
             border: 3px solid rgb(52, 52, 52);
             text-align: center;
             padding: 0.5rem 6rem;
             background-color: rgba(0, 0, 0, 0.257);
             width: 30rem;
         }
-        &:hover{
+
+        &:hover {
             color: $primary-color;
         }
-        &--main{ 
-            @include big-phone{
+
+        &--main {
+            @include big-phone {
                 width: 30rem;
             }
         }
-        &--small{
+
+        &--small {
             font-size: 2.5rem;
         }
-        &--last{
+
+        &--last {
             border-right: none;
-            @include huge-phone{
+
+            @include huge-phone {
                 border-right: 3px solid rgb(52, 52, 52)
             }
         }
     }
 }
 
-.section-header{
-        display: flex;
-        justify-content: center; 
-        line-height: 1rem;
-    &::before{
+.section-header {
+    display: flex;
+    justify-content: center;
+    line-height: 1rem;
+
+    &::before {
         content: "";
         display: block;
         width: 20rem;
         height: .3rem;
         background-color: $primary-color;
-        @include tablets{
+
+        @include tablets {
             width: 18rem
         }
-        @include huge-phone{
+
+        @include huge-phone {
             width: 13rem
         }
-        
+
     }
-    &::after{
+
+    &::after {
         content: "";
         display: block;
         width: 20rem;
         height: .3rem;
         background-color: $primary-color;
-        @include tablets{
+
+        @include tablets {
             width: 18rem
         }
-        @include huge-phone{
+
+        @include huge-phone {
             width: 13rem
         }
-        
+
     }
-    &__content{
-            
-            color: $primary-color;
-            font-size: 4.5rem;
-            padding: 0 3rem;
-            @include big-tablets{
-                
+
+    &__content {
+
+        color: $primary-color;
+        font-size: 4.5rem;
+        padding: 0 3rem;
+
+        @include big-tablets {
+
+            font-size: 5rem;
+        }
+
+        @include huge-phone {
+
+            font-size: 4rem;
+        }
+
+        @include big-phone {
+            font-size: 4.3rem;
+        }
+
+        @include phone {
+            font-size: 3.5rem;
+        }
+
+        @include small-phone {
+            font-size: 5rem;
+        }
+
+        &--large {
+            @include big-phone {
                 font-size: 5rem;
-            }
-            @include huge-phone{
-                
-                font-size: 4rem;
-            }
-            @include big-phone{
-                font-size: 4.3rem;
-            }
-            @include phone{
-                font-size: 3.5rem;
-            }
-            @include small-phone{
-                font-size: 5rem;
-            }
-            &--large{
-                @include big-phone{
-                    font-size: 5rem;
-                }
-                @include phone{
-                    font-size: 4rem;
-                }
             }
 
-            
+            @include phone {
+                font-size: 4rem;
+            }
+        }
+
+
     }
 }
 
 
 
-.article{
+.article {
     display: block;
     padding: 0 7vw;
     color: $main-font-color;
     font-size: 2.5rem;
     background-color: rgba(256, 256, 256, 0.6);
     text-align: center;
-    @include huge-phone{
+
+    @include huge-phone {
         font-size: 3rem;
     }
-    &--right{
+
+    &--right {
         transform: translateX(6rem);
-        @include huge-phone{
+
+        @include huge-phone {
             transform: none;
         }
     }
-    
+
 }
-.time-aside{
+
+.time-aside {
     background-color: #292929;
-   
-    @include huge-phone{
+
+    @include huge-phone {
         display: none;
     }
-    &__paragraph{
+
+    &__paragraph {
         font-size: 2.7rem;
         line-height: 3rem;
         align-items: center;
         display: flex;
         color: $secondary-color;
         text-align: center;
-        transform:  rotate(270deg);
-        
-        &--alt-rotate{
+        transform: rotate(270deg);
+
+        &--alt-rotate {
             transform: rotate(90deg);
         }
-        
-        
-        &::before{
+
+
+        &::before {
             margin-right: 5rem;
             content: "";
             display: block;
@@ -187,46 +221,52 @@
             height: .3rem;
             background-color: $secondary-color;
         }
-        &::after{
+
+        &::after {
             margin-left: 5rem;
             content: "";
             display: block;
             width: 80vh;
             height: .3rem;
-            background-color: $secondary-color;   
+            background-color: $secondary-color;
         }
     }
 }
-.about-aside{
-    &__content{
+
+.about-aside {
+    &__content {
         background-color: $primary-color;
         height: 30rem;
         width: 5rem;
-        &--decision{
+
+        &--decision {
             height: 25rem;
             text-align: center;
         }
-        
+
     }
-    &__paragraph
-    {
+
+    &__paragraph {
         display: block;
         width: 10rem;
         color: $secondary-color;
         font-size: 2rem;
         text-align: center;
         transform: rotate(90deg);
-        @include big-tablets{
+
+        @include big-tablets {
             font-size: 2.5rem;
             width: 15rem;
         }
-        &--large{
+
+        &--large {
             width: 20rem;
         }
-        
+
     }
 }
-.button{
+
+.button {
     display: block;
     background-color: $primary-color;
     width: 30rem;
@@ -235,196 +275,230 @@
     font-size: 2.5rem;
     color: $secondary-color;
     transition: .2s;
-    &:hover{
+
+    &:hover {
         transform: translateY(-10px);
     }
-    @include small-laptops{
+
+    @include small-laptops {
         font-size: 2.8rem;
     }
-    @include big-tablets{
+
+    @include big-tablets {
         font-size: 3rem;
         width: 33rem;
     }
-    
-    @include tablets{
+
+    @include tablets {
         font-size: 3rem;
         width: 35rem;
     }
-    @include small-tablets{
+
+    @include small-tablets {
         font-size: 3.5rem;
     }
-    @include big-phone{
+
+    @include big-phone {
         font-size: 4rem;
         width: 35rem;
     }
-    &__content{
+
+    &__content {
         display: block;
         width: 100%;
     }
-    &--large{
+
+    &--large {
         width: 35rem;
         font-size: 3rem;
-        @include big-tablets{
+
+        @include big-tablets {
             font-size: 3.4rem;
             width: 37rem;
         }
-        @include tablets{
+
+        @include tablets {
             font-size: 3.5rem;
             width: 40rem;
         }
-        @include small-tablets{
+
+        @include small-tablets {
             font-size: 4rem;
         }
-        @include big-phone{
+
+        @include big-phone {
             font-size: 4.5rem;
             width: 43rem;
         }
     }
-    
+
 }
-.ornament{
+
+.ornament {
     background-position: center;
     background-size: cover;
     height: 25vh;
-    @include big-tablets{
+
+    @include big-tablets {
         height: 20rem;
     }
-    &--bgimage1
-    {
+
+    &--bgimage1 {
         background-image: url(../images/ornament1.jpg);
     }
-    &--bgimage2{
+
+    &--bgimage2 {
         background-image: url(../images/ornament2.jpg);
     }
-    &--bgimage3{
+
+    &--bgimage3 {
         background-image: url(../images/ornament3.jpg);
     }
-    &--bgimage4{
+
+    &--bgimage4 {
         background-image: url(../images/ornament4.jpg);
         background-position: center;
     }
-    &__content{
+
+    &__content {
         display: block;
         background-color: rgba(0, 0, 0, 0.394);
         color: $secondary-color;
         font-size: 2.5rem;
         width: 80%;
         padding: 1rem;
-        &--3{
+
+        &--3 {
             font-size: 2rem;
         }
     }
 }
 
-.day-container{
+.day-container {
     width: 100%;
     border-bottom: 2px solid rgb(174, 166, 166);
-    &__heading{
+
+    &__heading {
         color: $primary-color;
         font-size: 4.5rem;
         order: 1;
-        @include big-phone{
+
+        @include big-phone {
             font-size: 5rem;
         }
-        &--col2{
+
+        &--col2 {
             order: 2;
         }
     }
-    &__content{
+
+    &__content {
         display: block;
         width: 50%;
         color: $main-font-color;
         font-size: 2.5rem;
         order: 1;
-        @include big-phone{
+
+        @include big-phone {
             font-size: 3rem;
         }
     }
 }
 
-    
-    .card{
-        position: relative;
-        width: 20vw;
-        height: 45rem;
-        transform-style: preserve-3d;
-        transition: all 0.9s ease;
-        @include huge-phone{
-            width: 31vw;
-            height: 55rem;
-        }
-        &:hover{
-            transform: translateY(-2rem) rotateY(180deg) ;
-            
-        }
-        &__front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            background-color: $primary-color;
-            
-        }
-        &__image{
-            width: 20rem;
-        }
-    
-        
-        &__paragraph{
-            color: white;
-            font-size: 4rem;
-        }
-        &__back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            background-color: $primary-color;
-            background-image: url(../images/uprising-symbol.png);
-            background-position: bottom;
-            background-size: 90%;
-            background-repeat: no-repeat;
-            transform: rotateY(180deg);
-            color: white;
-            font-size: 2rem;
-            line-height: 3rem;
-            font-weight: bold;
-            padding: 2rem;
-            text-align: center;
-        }
+
+.card {
+    position: relative;
+    width: 20vw;
+    height: 45rem;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+
+    @include huge-phone {
+        width: 31vw;
+        height: 55rem;
     }
-    .gallery{
-        overflow: hidden;
-        width: 100%;
-        
+
+    &:hover {
+        transform: translateY(-2rem) rotateY(180deg);
+
     }
-    .gallery-img{
+
+    &__front {
+        position: absolute;
         width: 100%;
         height: 100%;
-        max-height: 50vh;
-        object-fit: cover;
-        overflow: hidden;
-        transition: 0.4s;
-        &:hover
-        {
-            z-index: 1;
-            position: relative;
-            cursor: pointer;
-            filter: contrast(200%);
-        }
+        backface-visibility: hidden;
+        background-color: $primary-color;
+
     }
-   .restricted-paragraph{
-        color: $secondary-color;
+
+    &__image {
+        width: 20rem;
+    }
+
+
+    &__paragraph {
+        color: white;
+        font-size: 4rem;
+    }
+
+    &__back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: $primary-color;
+        background-image: url(../images/uprising-symbol.png);
+        background-position: bottom;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        transform: rotateY(180deg);
+        color: white;
         font-size: 2rem;
-        @include huge-phone{
-           font-size: 4rem;
-        }
-        @include phone{
-            font-size: 3rem;
-        }
-        
-   }
-.popup{
+        line-height: 3rem;
+        font-weight: bold;
+        padding: 2rem;
+        text-align: center;
+    }
+}
+
+.gallery {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.4s;
+
+    &:hover {
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        filter: contrast(200%);
+    }
+}
+
+.restricted-paragraph {
+    color: $secondary-color;
+    font-size: 2rem;
+
+    @include huge-phone {
+        font-size: 4rem;
+    }
+
+    @include phone {
+        font-size: 3rem;
+    }
+
+}
+
+.popup {
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -435,8 +509,8 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
-    
-    &__content{
+
+    &__content {
         display: block;
         width: 70%;
         background-color: $main-font-color;
@@ -448,9 +522,11 @@
         padding: 2rem;
         border: 4px solid $primary-color;
     }
-    &__video{
+
+    &__video {
         width: 100%;
     }
+
     &:target {
         opacity: 1;
         visibility: visible;
@@ -459,7 +535,6 @@
     &:target &__content {
         opacity: 1;
     }
-    
-    
-}
 
+
+}
