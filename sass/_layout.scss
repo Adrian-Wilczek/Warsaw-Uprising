@@ -152,7 +152,8 @@
         grid-row: 2;
         align-self: center;
         width: 40vw;
-        z-index: 1;
+        margin-top: 1rem;
+        z-index: -1;
         transform: translateX(3rem);
 
         @include huge-phone {
